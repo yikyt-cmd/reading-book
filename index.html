@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>閱讀器</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="reader" class="reader" aria-live="polite">
+    <div class="page-stage">
+      <img id="pageImage" class="page-image" src="" alt="">
+    </div>
+    <div class="ui-overlay">
+      <div class="caption" id="caption"></div>
+      <div class="controls">
+        <button id="stopBtn" class="control-btn" type="button">停止播放</button>
+        <button id="restartBtn" class="control-btn control-btn-secondary hidden" type="button">重讀</button>
+      </div>
+      <div class="page-indicator" id="pageIndicator"></div>
+    </div>
+    <div id="startOverlay" class="start-overlay hidden">
+      <button id="startBtn" class="start-btn" type="button">開始閱讀</button>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
